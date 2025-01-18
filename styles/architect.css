@@ -141,3 +141,38 @@ main > section{
         margin: 41px auto ;
     }
 }
+
+/* some fact related styles */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.facts-descripe{
+    max-width: 539px;
+}
+
+.fact-card{
+    border: 1px solid #FF900E;
+    width: 241px;
+    height: 241px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.facts-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.facts-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
