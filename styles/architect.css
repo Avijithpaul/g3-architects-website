@@ -215,6 +215,23 @@ main > section{
     filter: grayscale(100%);
 }
 
+/* footer styles */
+.footer{
+    max-width: 1440px;
+    height: 100px;
+    margin: 131px auto;
+    background-color: #FFF4E7;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
 
 /* responsive media query */
 @media screen and (max-width:575px) {
