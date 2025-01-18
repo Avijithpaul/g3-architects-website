@@ -119,33 +119,38 @@ main > section{
 }
 
 
-/* responsive media query */
-@media screen and (max-width:576px) {
-    .navbar,.teams{
-        flex-direction: column;
-    }
-    .team-image-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .our-feasures{
-        margin-left: 21px;
-    }
+/* features related styles */
+
+.features{
+    gap: 141px;
+    align-items: center;
 }
 
-/* medium media query */
-@media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
-        flex-direction: column;
-    }
-    .our-feasures{
-        margin: 41px auto ;
-    }
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
 }
+
+.feature-card{
+    padding: 31px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 21px;
+}
+
+.feature-card .feature-title{
+    font-size: 1.25rem;
+    font-weight: 600 ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 
 /* some fact related styles */
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    /* margin-top: 35px; */
 }
 
 .facts-descripe{
@@ -175,4 +180,65 @@ main > section{
     font-weight: 600;
     margin-top: 10px;
 }
+
+/* sponsor related styles */
+.sponsor-info{
+    max-width: 541px;
+    margin: 51px auto;
+    text-align: center;
+}
+
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+}
+
+.sponsor-companies img{
+    filter: grayscale(100%);
+}
+
+
+/* responsive media query */
+@media screen and (max-width:575px) {
+    .navbar,.teams{
+        flex-direction: column;
+    }
+
+    .team-image-container,
+    .facts-container,
+    .sponsor-companies{
+        grid-template-columns: 1fr;
+    }
+
+    .sponsor-companies{
+        gap: 51px;
+    }
+
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .our-feasures{
+        margin-left: 21px;
+    }
+}
+
+/* medium media query */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-feasures{
+        margin: 41px auto ;
+    }
+    .facts-container,.sponsor-companies{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 31px;
+    }
+}
+
+
 
